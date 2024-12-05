@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>SignUp</title>
+  </head>
+
+  <body
+    class="bg-scroll relative mb-10"
+    style="
+      background-image: url(/projecthotel/img/pexels-kelly-1179532-3845517.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 90vh;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: black;
+    "
+  >
+    <div
+      class="flex flex-col lg:flex-row mb-6 pb-10 lg:pb-0 lg:mb-14 lg:m-32 bg-white md:h-auto"
+    >
+      <div
+        class="bg-local relative h-2 lg:h-auto w-auto gap-4 flex flex-col justify-center lg:justify-start lg:flex-col text-center lg:text-left px-4 py-4 md:h-1/2 lg:w-1/2 lg:py-14 lg:px-16"
+        style="
+          background-image: url(/projecthotel/img/pexels-wolfgang-weiser-467045605-29344191.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 90vh;
+          background-blend-mode: multiply;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: black;
+        "
+      >
+        <a
+          class="w-28 self-center md:w-28 md:self-center lg:self-start lg:w-24"
+          href="index.html"
+          ><img
+            src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png"
+            alt=""
+        /></a>
+        <p class="text-white mb-10 font-bold text-3xl">Seaside B&B</p>
+        <p class="text-white font-semibold text-2xl mb-6">
+          It's the Simple Pleasures in Life.
+        </p>
+
+        <p
+          class="text-white text-sm md:text-2xl lg:text-xl md:px-10 lg:px-0 lg:pr-32"
+        >
+          Welcome to our wonderful world. We sincerely hope that eacg and every
+          user entering our website will find exactly what is looking for.
+        </p>
+        <div class="text-white font-semibold flex flex-col gap-x-3 mt-4">
+          <span
+            ><i class="ri-home-8-line"></i
+            ><span class="md:ml-3">Parking Lot</span></span
+          ><br />
+          <span
+            ><i class="ri-thumb-up-line"></i
+            ><span class="md:ml-3">Private Gym with trainer</span></span
+          ><br />
+          <span
+            ><i class="ri-gemini-line"></i
+            ><span class="md:ml-3">Swimming Pool</span></span
+          ><br />
+          <span
+            ><i class="ri-home-8-line"></i
+            ><span class="md:ml-3">Restaurants & Bars</span></span
+          ><br />
+          <span
+            ><i class="ri-heart-line"></i
+            ><span class="md:ml-3">Sauna & Spa</span></span
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col lg:flex-col justify-center md:justify-center items-center md:items-center lg:justify-start mt-5 lg:items-start h-auto md:h-auto w-auto gap-4 lg:w-1/2 px-0 lg:px-40 lg:py-20"
+      >
+        <p class="font-semibold text-3xl lg:text-4xl mb-5">
+          Create Your Account
+        </p>
+        <form class="space-y-5" action="signup.php" method="post">
+          <div>
+            <label for="Name">Name</label><br />
+            <input
+              type="text"
+              name="username"
+              class="outline-none w-72 md:w-96 lg:w-96 text-xs"
+              placeholder="Enter Your Name"
+            />
+            <hr
+              class="w-72 md:w-96 lg:w-96 h-0 md:h-1 bg-gray-200 rounded-full cursor-pointer hover:bg-slate-500"
+            />
+          </div>
+          <div>
+            <label for="Email">Email-Address</label><br />
+            <input
+              type="email"
+              name="email"
+              class="outline-none w-72 md:w-96 lg:w-96 text-xs"
+              placeholder="Enter Your E-mail"
+            />
+            <hr
+              class="w-72 md:w-96 lg:w-96 h-0 md:h-1 bg-gray-200 rounded-full cursor-pointer hover:bg-slate-500"
+            />
+          </div>
+          <div>
+            <label for="Phone">Phone Number</label><br />
+            <input
+              type="text"
+              name="phone"
+              class="outline-none w-72 md:w-96 lg:w-96 text-xs"
+              placeholder="Enter Your Phone Number"
+            />
+            <hr
+              class="w-72 md:w-96 lg:w-96 h-0 md:h-1 bg-gray-200 rounded-full cursor-pointer hover:bg-slate-500"
+            />
+          </div>
+          <div>
+            <label for="Password">Password</label><br />
+            <input
+              type="password"
+              name="password"
+              class="outline-none w-72 md:w-96 lg:w-96 text-xs"
+              placeholder="Enter Your Password"
+            />
+            <hr
+              class="w-72 md:w-96 lg:w-96 h-0 md:h-1 bg-gray-200 rounded-full cursor-pointer hover:bg-slate-500"
+            />
+          </div>
+          <div>
+            <label for="Password2">Confirm Password</label><br />
+            <input
+              type="password2"
+              name="password2"
+              class="outline-none w-72 md:w-96 lg:w-96 text-xs"
+              placeholder="Confirm Your Password"
+            />
+            <hr
+              class="w-72 md:w-96 lg:w-96 h-0 md:h-1 bg-gray-200 rounded-full cursor-pointer hover:bg-slate-500"
+            />
+          </div>
+          <div>
+            <form action="">
+              <input type="checkbox" name="agreement" id="agreement" placeholder="v" /><span
+              class="italic"
+            >
+              By Signing Agree with</span
+            >
+            </form>
+            
+            <a
+              class="text-blue-900 md:text-yellow-500 lg:text-blue-900 font-semibold"
+              href="#"
+              >terms and policy</a
+            >
+          </div>
+
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-2 mb-4 lg:bg-white lg:mb-0"
+          >
+            <a href="BookAroom.html"
+              ><input
+                class="bg-blue-950 text-white py-2 px-20 mt-4 cursor-pointer hover:bg-white hover:text-blue-950"
+                type="submit"
+                value="Sign Up"
+              />
+            </a>
+
+            <a href="signin.html"
+              ><input
+                class="bg-white text-blue-950 py-2 px-20 mt-4 cursor-pointer outline outline-blue-950 hover:bg-blue-950 hover:text-white"
+                type="submit"
+                value="Sign In"
+              />
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

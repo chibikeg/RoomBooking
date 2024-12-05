@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Signin</title>
+  </head>
+
+  <body
+    class="bg-scroll relative mb-10"
+    style="
+      background-image: url(/projecthotel/img/pexels-kelly-1179532-3845517.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 90vh;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: black;
+    "
+  >
+    <div
+      class="flex flex-col lg:flex-row mb-6 pb-10 lg:pb-0 md:mb-14 lg:m-32 bg-white lg:h-full"
+    >
+      <div
+        class="bg-local relative h-2 lg:h-auto w-auto gap-4 flex flex-col justify-center lg:justify-start lg:flex-col text-center lg:text-left px-4 py-4 md:h-1/2 lg:w-1/2 lg:py-14 lg:px-16"
+        style="
+          background-image: url(/projecthotel/img/pexels-kadiravsarr-14749882.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 90vh;
+          background-blend-mode: multiply;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: black;
+        "
+      >
+        <a
+          class="w-28 self-center md:w-28 md:self-center lg:self-start lg:w-24"
+          href="index.html"
+          ><img
+            src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png"
+            alt=""
+        /></a>
+        <p class="text-white mb-10 font-bold text-3xl">Seaside B&B</p>
+        <p class="text-white font-semibold text-2xl mb-6">
+          It's the Simple Pleasures in Life.
+        </p>
+
+        <p
+          class="text-white text-sm md:text-2xl lg:text-xl md:px-10 lg:px-0 lg:pr-32"
+        >
+          Welcome to our wonderful world. We sincerely hope that eacg and every
+          user entering our website will find exactly what is looking for.
+        </p>
+        <div class="text-white font-semibold flex flex-col gap-x-3 mt-4">
+          <span
+            ><i class="ri-home-8-line"></i
+            ><span class="md:ml-3">Parking Lot</span></span
+          ><br />
+          <span
+            ><i class="ri-thumb-up-line"></i
+            ><span class="md:ml-3">Private Gym with trainer</span></span
+          ><br />
+          <span
+            ><i class="ri-gemini-line"></i
+            ><span class="md:ml-3">Swimming Pool</span></span
+          ><br />
+          <span
+            ><i class="ri-home-8-line"></i
+            ><span class="md:ml-3">Restaurants & Bars</span></span
+          ><br />
+          <span
+            ><i class="ri-heart-line"></i
+            ><span class="md:ml-3">Sauna & Spa</span></span
+          >
+        </div>
+      </div>
+      <div
+        class="flex flex-col lg:flex-col justify-center items-center lg:justify-start mt-20 lg:items-start h-auto w-auto gap-4 md:h-1/2 lg:w-1/2 px-0 lg:px-40 lg:py-20"
+      >
+        <p class="font-semibold text-3xl lg:text-4xl mb-5">
+          Login Your Account
+        </p>
+        <form class="space-y-5" action="signup.php" method="post">
+          <div>
+            <label for="Name">Name</label><br />
+            <input
+              type="text"
+              name="username"
+              class="w-72 lg:w-96 h-10 border solid border-black rounded-sm hover:bg-blue-100 hover:text-white px-2 text-sm"
+              placeholder="Enter Your Name"
+            />
+          </div>
+
+          <div>
+            <label for="Password">Password</label><br />
+            <input
+              type="password"
+              name="password"
+              class="w-72 lg:w-96 h-10 border solid border-black rounded-sm hover:bg-blue-100 hover:text-white px-2 text-sm"
+              placeholder="Enter Your Password"
+            />
+          </div>
+          <div class="text-center">
+            <a class="text-blue-900 font-bold" href="#">Forgot Password?</a>
+          </div>
+
+          <div class="flex justify-center items-center">
+            <a href="BookAroom.html"
+              ><input
+                class="bg-blue-950 text-white py-2 px-20 mt-4 cursor-pointer outline outline-blue-950 hover:bg-white hover:text-blue-950"
+                type="submit"
+                value="Log In"
+            /></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

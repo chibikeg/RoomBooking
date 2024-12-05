@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Seaside/home</title>
+</head>
+
+<body>
+    <div class="bg-local relative overflow-x-hidden" style="
+        background-image: url(/projecthotel/img/pexels-kelly-1179532-3845517.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      ">
+        <nav class="sticky top-0 z-[99999999] w-full bg-green-950 md:bg-blue-950">
+            <div class="flex justify-between md:flex md:justify-around md:items-center">
+                <div class="hidden md:flex md:justify-center md:items-center md:gap-2 lg:gap-8">
+                    <a href="index.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline ">Home</a>
+                    <a href="AboutUs.html" class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">About
+                        us</a>
+                    <a href="activities.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">Activities</a>
+                    <a href="contactus.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">Contact us</a>
+                    
+                    <div class="flex justify-center md:justify-start -space-x-6 ">
+                            <a href="signin.html"><input
+                                class="bg-blue-900 text-white rounded-full py-1 px-4 pr-8 cursor-pointer outline outline-blue-950 hover:bg-white hover:text-blue-900"
+                                type="submit"
+                                value="Sign In"
+                              /></a>
+                
+                            <a href="signup.html"><input
+                                class="bg-white text-blue-950 rounded-full py-1 px-5 cursor-pointer outline  hover:bg-blue-950 hover:text-white"
+                                type="submit"
+                                value="Sign Up"
+                              /></a>
+                    </div>
+                </div>
+                <a href="#">
+                    <div class="flex flex-col justify-center top-6 md:flex-col md:items-center">
+                        <img src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png" alt=""
+                            class="w-fit h-16" />
+                        <h1 class="text-2xl font-bold text-white ml-2">Seaside B&B</h1>
+                        <p class="hidden">- San Jose -</p>
+                    </div>
+                </a>
+                <div class="hidden md:hidden lg:flex lg:justify-center lg:items-center md:gap-5 lg:gap-20">
+                    <div class="flex items-center gap-3">
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/facebook-circle-fill.png"
+                                alt="" /></a>
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/instagram-fill.png"
+                                alt="" /></a>
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/twitter-x-line.png"
+                                alt="" /></a>
+                    </div>
+                    <a href="signup.html"
+                        class="text-white text-lg md:text-xs lg:text-lg font-semibold md:mr-0 lg:mr-4 hover:text-blue-950 border border-solid px-4 md:px-2 lg:px-4 py-2 rounded-full bg-blue-900 hover:bg-white hover:underline">Book
+                        a Room</a>
+
+                </div>
+
+
+                <button id="menu-btn" class="block hamburger right-4 mt-10 md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>.
+                    
+                </button>
+              
+                    
+                </i>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="md:hidden">
+                <div id="menu"
+                    class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold text-black bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#" class="hover:text-darkGrayishBlue">Book A Room</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Activities</a>
+                    <a href="#" class="hover:text-darkGrayishBlue">Contact us</a>
+                    
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex flex-col justify-center items-center h-screen">
+            <img src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png" alt="" />
+            <p class="relative text-5xl font-serif text-white ml-2 mt-20 px-52 text-center">
+                Experience Luxury & <br />Comfort
+            </p>
+        </div>
+    </div>
+
+    <div>
+        <section class="relative flex flex-col-reverse md:flex-row justify-center items-center gap-4 top-4 mb-4 md:justify-center md:my-14">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-9 mb-4 md:mb-2">
+                <span class="flex flex-col justify-center items-center space-y-2 md:gap-4">
+                    <h4 class="text-xs"><i>Check-in</i></h4>
+                    <span><input type="datetime-local" placeholder="Check-in"
+                            class="cursor-pointer w-52 h-9 rounded-xl border-2 border-gray-400 pl-4 text-black" /></span>
+                </span>
+                <span class="flex relative font-bold md:font-semibold md:top-6"><i> to </i></span>
+                <span class="flex flex-col justify-center items-center space-y-2 md:gap-4">
+                    <h4 class="text-xs"><i>Check-Out</i></h4>
+                    <span><input type="datetime-local" placeholder="Check-Out"
+                            class="cursor-pointer w-52 h-9 rounded-xl border-2 border-gray-400 pl-4 text-black" /></span>
+                </span>
+            </div>
+
+            <div>
+
+                <form class="max-w-sm mx-auto">
+                    <label for="rooms" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                        an option</label>
+                    <select id="rooms"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <a href="#"><option selected><b>ROOMS AVAILABLE:</b></option></a>
+                        <option value="US">Standard King Room</option>
+                        <option value="CA">Deluxe King Room</option>
+                        <option value="FR">Deluxe Queen Room</option>
+                        <option value="DE">King Room</option>
+                        <option value="DE">Queen Room - Disability Access</option>
+                    </select>
+                </form>
+
+            </div>
+        </section>
+
+        <section class="relative space-y-4 md:space-y-0">
+            <div class="flex flex-col md:flex-col lg:flex-row justify-center items-center lg:space-x-20 w-100%">
+                <div class="lg:w-1/2">
+                    <img class="h-100% w-100% lg:pl-32" src="/projecthotel/img/pexels-willianjusten-16116490.jpg"
+                        alt="" />
+                </div>
+                <div class=" lg:w-1/2 pr-0 md:pr-0 lg:pr-32">
+                    <h1
+                        class="bg-slate-100 md:bg-inherit text-center md:text-center lg:text-left text-5xl md:text-5xl mt-2 md:mt-2 lg:mt-2 lg:text-7xl font-serif mb-4 md:mb-4 lg:mb-4">
+                        Best luxury business hotel in Lagos, <br class="hidden md:block" />Nigeria
+                    </h1>
+                    <p class="bg-yellow-50 md:bg-yellow-50 lg:bg-inherit text-center lg:text-left font-serif mb-10 md:mb-10 lg:mb-16">
+                        Lagos Continental is an award-winning luxury 5-star hotel located
+                        in the heart of Victoria Island in Lagos. Lagos Continental Hotel
+                        is the tallest hotel in West Africa, boasting 358 elegant rooms,
+                        37 Suites, and a Presidential Suite. All rooms are designed for
+                        your comfort and relaxation.
+                    </p>
+                    <div class=" flex justify-center md:justify-center items-center md:items-center lg:justify-start lg:items-start"><a
+                            class="px-8 py-3 rounded-xl border-2 border-gray-400 text-black font-bold hover:bg-blue-900 hover:text-white text-center"
+                            href="#">DISCOVER MORE</a></div>
+
+                </div>
+            </div>
+
+            <div class="hidden md:hidden lg:block relative mt-2 mb-4 lg:max-w-screen-md lg::-top-10"
+                style="height: 90vh; left: 70vh">
+                <img src="/projecthotel/img/pexels-sebastian-angarita-188980555-16639180.jpg" alt="img" />
+            </div>
+        </section>
+
+        <section>
+            <div class="flex flex-col justify-center items-center mt-16 mb-10 md:mb-10 lg:mb-4 md:mt-16 lg:mt-16 h-80 py-10">
+                <div>
+                    <img class="bg-black" src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png"
+                        alt="" />
+                </div>
+                <div>
+                    <p class="text-3xl md:text-5xl font-serif text-center px-4 md:px-10 py-3">
+                        Whether you are in town for business <br class="hidden lg:block" />or pleasure, you can be
+                        certain of having <br class="hidden lg:block" />a great stay in any of our spacious
+                        <br class="hidden lg:block" />luxurious guest rooms and suites.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div
+                class="relative flex flex-col md:flex-col lg:flex-row lg:justify-between items-center mb-4 px-5 md:px-5 lg:px-0 lg:h-80 py-10 bg-slate-100">
+                <div
+                    class="lg:w-1/2 flex flex-col lg:flex-row justify-center items-center lg:items-start space-y-4 mb-4 lg:mb-0 :space-y-0 space-x-5">
+                    <div>
+                        <h1 class="font-bold text-blue-800">_________</h1>
+                    </div>
+                    <div>
+                        <p class="text-center lg:text-left font-serif font-bold text-blue-900">Rooms & Suites</p>
+                        <p class="font-serif text-4xl text-center md:text-center lg:text-left md:text-4xl lg:text-5xl">You’d love the comfort</p>
+                        <p class="text-center lg:text-left">
+                            Luxurious, exquisite and comfortable are the perfect words that
+                            <br class="hidden lg:block" />
+                            describe our rooms and suites.
+                        </p>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 flex flex-col justify-between items-center">
+                    <a class="px-8 py-3 rounded-xl border-2 border-gray-400 text-black font-bold hover:bg-blue-900 hover:text-white"
+                        href="#">DISCOVER MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="default-carousel mb-10 lg:mb-0" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg lg:h-96">
+                    <!-- Item 1 -->
+                    <div class="duration-10 ease-in-out" data-carousel-item>
+                        <img src="/projecthotel/img/pexels-luis-zambrano-3782493-16436963.jpg"
+                            class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="duration-10 ease-in-out" data-carousel-item>
+                        <img src="/projecthotel/img/pexels-kadiravsarr-14749882.jpg"
+                            class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="duration-10 ease-in-out" data-carousel-item>
+                        <img src="/projecthotel/img/pexels-kadiravsarr-14750222.jpg"
+                            class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="duration-10 ease-in-out" data-carousel-item>
+                        <img src="/projecthotel/img/pexels-kadiravsarr-14750441.jpg"
+                            class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="duration-10 ease-in-out" data-carousel-item>
+                        <img src="/projecthotel/img/pexels-alan-retano-369197863-14853728.jpg"
+                            class="absolute block w-1/2 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                        data-carousel-slide-to="4"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-scroll mt-6 md:mb-0 lg:mb-0 md:mt-5" style="
+          background-image: url(/projecthotel/img/pexels-mahmoud-yahyaoui-27594853.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100vh;
+          width: 100%;
+          background-blend-mode: multiply;
+          background-color: rgba(52, 51, 51, 0.435);
+        ">
+            <div>
+                <div class="flex flex-col justify-center items-center h-full text-white font-semibold">
+                    <h1 class="mt-10 md:mt-5 lg:mt-10 text-blue-200 font-semibold text-2xl">Welcome</h1>
+                    <p class="font-bold mb-8 md:mb-4 lg:mb-8 text-blue-200">_____</p>
+                    <p class="italic text-center text-blue-200">
+                        I'm a paragraph. Click here to add your own text and edit me.
+                        <br />I’m a great place for you to tell a story and let your users
+                        know a little more about you.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center gap-3 md:gap-3 lg:gap-6 mt-10 md:mt-6 lg:mt-36">
+                <div
+                    class="bg-white w-96 mb-4 lg:mb-0 py-4 md:py-0 lg:h-96 lg:w-72 shadow-lg text-center flex flex-col justify-center lg:space-y-9">
+                    <h3 class="font-semibold text-blue-950 text-xl">Activities</h3>
+                    <p class="italic px-4 lg:px-10">
+                        I'm a paragraph. Click here to add your own text and edit me. I’m
+                        a great place for you to tell a story and let your users know a
+                        little more about you.
+                    </p>
+                    <p class="font-extrabold">_____</p>
+                    <a class="hover:bg-blue-900 hover:text-white h-10 md:h-11 w-32 md:w-52 self-center pt-2 text-blue-950"
+                        href="#">Read
+                        More</a>
+                </div>
+
+                <div
+                    class="bg-white w-96 mb-4 lg:mb-0 py-4 md:py-0 lg:h-96 lg:w-72 shadow-lg text-center flex flex-col justify-center lg:space-y-9">
+                    <h3 class="font-semibold text-blue-950 text-xl">Rooms</h3>
+                    <p class="italic px-10 lg:px-10">
+                        I'm a paragraph. Click here to add your own text and edit me. I’m
+                        a great place for you to tell a story and let your users know a
+                        little more about you.
+                    </p>
+                    <p class="font-extrabold">_____</p>
+                    <a class="hover:bg-blue-900 hover:text-white h-10 md:h-11 w-32 md:w-52 self-center pt-2 text-blue-950"
+                        href="#">Read
+                        More</a>
+                </div>
+
+                <div
+                    class="bg-white hidden md:flex md:flex-col md:w-96 md:mb-4 lg:mb-0 md:py-4 lg:py-0 lg:h-96 lg:w-72 shadow-lg text-center lg:flex flex-col justify-center lg:space-y-9">
+                    <h3 class="font-semibold text-blue-950 text-xl">Location</h3>
+                    <p class="italic px-10 lg:px-10">
+                        I'm a paragraph. Click here to add your own text and edit me. I’m
+                        a great place for you to tell a story and let your users know a
+                        little more about you.
+                    </p>
+                    <p class="font-extrabold">_____</p>
+                    <a class="hover:bg-blue-900 hover:text-white h-10 md:h-11 w-32 md:w-52 self-center pt-2 text-blue-950"
+                        href="#">Read
+                        More</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <div
+                class="relative flex md:justify-between flex-col md:flex-row items-center h-full mt-6 md:mt-0 bg-blue-950">
+                <div class="md:w-1/2 flex flex-col justify-center items-center space-y-5 mb-3 md:mb-0 text-white">
+                    <div class="font-bold text-white">_______________</div>
+                    <div class="flex flex-col justify-center items-center space-y-2 md:space-y-3">
+                        <p class="font-bold text-blue-600">RESERVATION</p>
+                        <p class="font-serif text-4xl md:text-5xl">Getting Here</p>
+                        <p class="text-center text-xs md:text-sm md:text-left px-2 md:px-0">52a Kofo Abayomi Street
+                            Victoria Island 101241 Lagos Nigeria</p>
+                        <span class="text-yellow-500 text-center md:text-left">Tel: <a
+                                class="text-white hover:text-yellow-500 text-xl md:text-2xl"
+                                href="tel:+2348176787654"><br class=" md:text-xl md:hidden">+234(0)8176787654</a></span>
+                        <span class="text-yellow-500 text-center md:text-left">Fax: <a
+                                class="text-white  hover:text-yellow-500 text-xl md:text-2xl" href="#"><br
+                                    class="md:hidden">+234(0)8176787654</a></span>
+                        <span class="text-yellow-500 text-center md:text-left">E-mail: <a
+                                class="text-white hover:text-yellow-500 text-xl md:text-2xl"
+                                href="mailto:info@thelagoscontinental.com"><br
+                                    class="md:hidden">info@thelagoscontinental.com</a></span>
+                    </div>
+
+                    <div class="flex justify-center items-start space-x-14 mt-10 font-bold ">
+                        <a class=" hover:text-yellow-500" href="#">LOCATE US</a>
+                        <a class=" hover:text-yellow-500" href="#">CONTACT US</a>
+                    </div>
+                </div>
+                <div class="w-1/2 md:w-1/2 flex justify-center items-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15858.72886693882!2d3.4227825!3d6.4348484!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf52c200dc14f%3A0xbc9bcd9ac12d2630!2sLagos%20Continental%20Hotel!5e0!3m2!1sen!2sng!4v1732027582264!5m2!1sen!2sng"
+                        width="870" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <div
+                class="h-52 bg-yellow-500 flex flex-col md:flex-row space-y-3 md:space-y-0 justify-center items-center px-4 lg:px-0 md:gap-12 lg:gap-14">
+                <div>
+                    <h1 class="font-serif text-center md:text-left text-3xl md:text-4xl text-white">Subscribe to our
+                        newsletter</h1>
+                </div>
+                <div class="flex gap-2 md:gap-4"><span><input type="text" placeholder="Your email address"
+                            class="rounded solid rounded-black bg-yellow-500 text-white px-9 py-2 hover:bg-gray-500"></span><span><button
+                            class="rounded rounded-white bg-blue-950 text-white px-6 py-1 md:px-9 md:py-2 hover:bg-white hover:text-blue-950">SignUp</button></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative">
+            <div class="bg-red-900 md:bg-green-950 h-60 w-full flex flex-col items-center">
+                <div class="flex justify-center items-center text-white text-sm md:text-xl gap-3 md:gap-10 mt-4 mb-10">
+                    <div><a class="hover:text-gray-600" href="index.html">Home</a></div>
+                    <div><a class="hover:text-gray-600" href="BookAroom.html">Book a room</a></div>
+                    <div><a class="hover:text-gray-600" href="AboutUs.html">About Us</a></div>
+                    <div><a class="hover:text-gray-600" href="activities.html">Activities</a></div>
+                    <div><a class="hover:text-gray-600" href="contactus.html">Contact Us</a></div>
+                </div>
+                <div class="flex justify-between px-4 md:px-0 items-center gap-6 md:gap-16">
+
+                    <div class="space-y-1 md:space-y-2">
+                        <h1 class="font-extrabold text-white">_____</h1>
+                        <p class="font-semibold md:font-bold text-xs md:text-2xl text-white">Call us now to book</p>
+                        <p class="font-extrabold text-xs md:text-xl text-white">
+                            <a class="hover:text-gray-600" href="tel:+1-800-000-0000">1-800-000-0000</a>
+                        </p>
+                    </div>
+
+                    <div class="space-y-1 md:space-y-2">
+                        <h1 class="font-extrabold text-white">_____</h1>
+                        <p class="font-bold text-xs md:text-2xl text-white">Follow us</p>
+                        <div class="flex items-center gap-3">
+                            <a href="#"><img class="bg-white hover:bg-slate-500"
+                                    src="/projecthotel/img/facebook-circle-fill.png" alt="" /></a>
+                            <a href="#"><img class="bg-white hover:bg-slate-500"
+                                    src="/projecthotel/img/instagram-fill.png" alt="" /></a>
+                            <a href="#"><img class="bg-white hover:bg-slate-500"
+                                    src="/projecthotel/img/twitter-x-line.png" alt="" /></a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1 md:space-y-2">
+                        <h1 class="font-extrabold text-white">_____</h1>
+                        <p class="font-bold text-xs md:text-sm text-white">© 2035 by Seaside B&B</p>
+                        <p class="font-semibold text-xs md:text-xl text-white">
+                            Powered and secured by
+                            <a class="font-bold text-yellow-300 hover:text-gray-500" href="#">Wix</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+</body>
+
+</html>

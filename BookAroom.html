@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>BookAroom</title>
+</head>
+
+<body class="bg-scroll">
+    <div class="bg-local relative overflow-x-hidden" style="
+        background-image: url(/projecthotel/img/pexels-kelly-1179532-3845517.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      ">
+        <nav class="sticky top-0 z-[99999999] w-full bg-green-950 md:bg-blue-950">
+            <div class="flex justify-between md:flex md:justify-around md:items-center">
+                <div class="hidden md:flex md:justify-center md:items-center md:gap-2 lg:gap-8">
+                    <a href="index.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline ">Home</a>
+                    <a href="AboutUs.html" class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">About
+                        us</a>
+                    <a href="activities.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">Activities</a>
+                    <a href="contactus.html"
+                        class="text-white text-sm md:text-xs lg:text-sm font-semibold mr-4 hover:text-gray-400 hover:underline">Contact us</a>
+                    
+                    <div class="flex justify-center md:justify-start -space-x-6 ">
+                            <a href="signin.html"><input
+                                class="bg-blue-900 text-white rounded-full py-1 px-4 pr-8 cursor-pointer outline outline-blue-950 hover:bg-white hover:text-blue-900"
+                                type="submit"
+                                value="Sign In"
+                              /></a>
+                
+                            <a href="signup.html"><input
+                                class="bg-white text-blue-950 rounded-full py-1 px-5 cursor-pointer outline  hover:bg-blue-950 hover:text-white"
+                                type="submit"
+                                value="Sign Up"
+                              /></a>
+                    </div>
+                </div>
+                <a href="index.html">
+                    <div class="flex flex-col justify-center top-6 md:flex-col md:items-center">
+                        <img src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png" alt=""
+                            class="w-fit h-16" />
+                        <h1 class="text-2xl font-bold text-white ml-2">Seaside B&B</h1>
+                        <p class="hidden">- San Jose -</p>
+                    </div>
+                </a>
+                <!-- <div class="hidden md:hidden lg:flex lg:justify-center lg:items-center md:gap-5 lg:gap-20">
+                    <div class="flex items-center gap-3">
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/facebook-circle-fill.png"
+                                alt="" /></a>
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/instagram-fill.png"
+                                alt="" /></a>
+                        <a href="#"><img class=" hover:bg-slate-500" src="/projecthotel/img/twitter-x-line.png"
+                                alt="" /></a>
+                    </div>
+                    <a href="BookAroom.html"
+                        class="text-white text-lg md:text-xs lg:text-lg font-semibold md:mr-0 lg:mr-4 hover:text-blue-950 border border-solid px-4 md:px-2 lg:px-4 py-2 rounded-full bg-blue-900 hover:bg-white hover:underline">Book
+                        a Room</a>
+
+                </div> -->
+
+                <button id="menu-btn" class="block hamburger right-4 mt-10 md:hidden focus:outline-none">
+                    .<span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                    
+                </button>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="relative flex flex-row justify-center -left-48 md:-left-96">
+        <section class="absolute">
+            <div class="absolute -top-36 bg-white h-20 w-72 border-solid border-blue-950 shadow-lg flex items-end">
+                <h1 class="text-blue-950 text-3xl font-semibold ml-4 mb-3">
+                    Book a room
+                </h1>
+            </div>
+        </section>
+    </div>
+
+    <section class="relative flex flex-col md:flex-col justify-center items-center">
+        <section class="relative flex flex-col justify-center lg:flex-row items-center top-4 mb-4 gap-x-4 md:justify-center md:my-14">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-0 md:gap-9">
+                <span class="flex flex-col justify-center items-center space-y-2 md:gap-4">
+                    <h4 class="text-xs"><i>Check-in</i></h4>
+                    <span><input type="datetime-local" placeholder="Check-in"
+                            class="cursor-pointer w-52 h-9 rounded-xl border-2 border-gray-400 pl-4 text-black" /></span>
+                </span>
+                <span class="flex relative font-bold md:font-semibold md:top-6"><i> to </i></span>
+                <span class="flex flex-col justify-center items-center space-y-2 md:gap-4">
+                    <h4 class="text-xs"><i>Check-Out</i></h4>
+                    <span><input type="datetime-local" placeholder="Check-Out"
+                            class="cursor-pointer w-52 h-9 rounded-xl border-2 border-gray-400 pl-4 text-black" /></span>
+                </span>
+            </div>
+
+            <div>
+                <form class="max-w-sm mx-auto mt-3">
+                    <label for="rooms" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select
+                        an option</label>
+                    <select id="rooms"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-4 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <a href="#"><option selected>CHOOSE A ROOM:</option></a>
+                        <option value="US">Standard King Room</option>
+                        <option value="CA">Deluxe King Room</option>
+                        <option value="FR">Deluxe Queen Room</option>
+                        <option value="DE">King Room</option>
+                        <option value="DE">Queen Room - Disability Access</option>
+                    </select>
+                </form>
+
+            </div>
+        </section>
+
+
+
+        <section class="mb-4 bg-gray-100">
+            <div class="flex flex-col md:flex-row md:justify-center md:items-center gap-4 md:gap-9">
+                <div class="flex flex-col gap-3 px-2 md:px-0 md:gap-6">
+                    <h1 class="text-2xl font-semibold mb-2 md:mb-0 bg-slate-200 p-2 mt-4 md:mt-0">Executive suites</h1>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/41dcf547-c5c1-4207-97a1-7477ab6712be.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Standard KIng room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/85148cd5-b779-4683-a171-26eda40fde44.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Deluxe King room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/235a55a9-592c-4027-b081-372eb92b3704.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Deluxe Queen room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-fixed relative border-solid border-2 border-gray-300 w-auto h-fit flex flex-col items-center md:items-start p-3 bg-slate-200 italic space-y-5 font-serif">
+                    <h1 class="space-y-6 text-xl">Your reservation</h1>
+                    <p class="text-xs space-y-5">Check-in: Fri, Nov 15, 2024<br>Check-out: Sat, Nov 16, 2024</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>1 room, 2 adults, 1 night</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>Please add rooms</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div>
+                        <p class="text-xs mb-1">Add promo code</p>
+                        <input type="text" placeholder=" Enter code" class="border-solid border-2 border-gray-950 w-52 h-8 italic">
+                        <span><a class="text-white text-sm border-solid rounded-none border-2 border-blue-400 px-4 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950" href="#">Apply</a></span>
+                    </div>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div class="flex gap-52 text-xl">
+                        <p>Total</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="text-white flex relative left-0 md:left-9 text-sm border-solid rounded-none border-2 border-blue-400 px-24 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950"><a href="#">Continue</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+           
+
+        <section class="mb-4">
+            <div class="flex flex-col md:flex-row md:justify-center md:items-center gap-4 md:gap-9">
+                <div class="flex flex-col gap-3 px-2 md:px-0 md:gap-5">
+                    <h1 class="text-2xl font-semibold mb-2 md:mb-0 bg-slate-200 p-2 mt-4 md:mt-0">Standard suites</h1>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/41dcf547-c5c1-4207-97a1-7477ab6712be.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">King room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/85148cd5-b779-4683-a171-26eda40fde44.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Queen room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/235a55a9-592c-4027-b081-372eb92b3704.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Queen room:<i> Disability Access</i></h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-fixed relative border-solid border-2 border-gray-300 w-auto h-fit flex flex-col items-center md:items-start p-3 bg-slate-200 italic space-y-5 font-serif">
+                    <h1 class="space-y-6 text-xl">Your reservation</h1>
+                    <p class="text-xs space-y-5">Check-in: Fri, Nov 15, 2024<br>Check-out: Sat, Nov 16, 2024</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>1 room, 2 adults, 1 night</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>Please add rooms</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div>
+                        <p class="text-xs mb-1">Add promo code</p>
+                        <input type="text" placeholder=" Enter code" class="border-solid border-2 border-gray-950 w-52 h-8 italic">
+                        <span><a class="text-white text-sm border-solid rounded-none border-2 border-blue-400 px-4 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950" href="#">Apply</a></span>
+                    </div>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div class="flex gap-52 text-xl">
+                        <p>Total</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="text-white flex relative left-0 md:left-9 text-sm border-solid rounded-none border-2 border-blue-400 px-24 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950"><a href="#">Continue</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+
+
+
+        <section class="mb-4 bg-slate-100">
+            <div class="flex flex-col md:flex-row md:justify-center md:items-center gap-4 md:gap-9">
+                <div class="flex flex-col gap-3 px-2 md:px-0 md:gap-6">
+                    <h1 class="text-2xl font-semibold mb-2 md:mb-0 bg-slate-200 p-2 mt-4 md:mt-0">Junior suites</h1>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/41dcf547-c5c1-4207-97a1-7477ab6712be.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">King room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/85148cd5-b779-4683-a171-26eda40fde44.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Queen room</h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                    <div class="border-solid border-2 border-gray-400 w-auto h-52 flex items-center gap-5">
+                        <div>
+                            <img class="h-52 w-80" src="/projecthotel/img/235a55a9-592c-4027-b081-372eb92b3704.jpg.jpg"
+                                alt="" />
+                        </div>
+                        <div class="w-1/2">
+                            <div class="mb-8 md:mb-10 flex flex-col gap-1 md:gap-2">
+                                <h1 class="font-semibold">Queen room:<i> Disability Access</i></h1>
+                                <p class="italic">
+                                    <span><i class="ri-user-3-line"></i></span> 2 Adult max
+                                </p>
+                                <p class="italic">
+                                    <span><i class="ri-custom-size"></i></span> 30 m<sup>2</sup>
+                                </p>
+                            </div>
+
+                            <a class="italic underline hover:text-red-500" href="#">More details</a>
+                        </div>
+                        <div class="w-1/2 flex flex-col justify text-end self-end mb-4 pr-4 italic">
+                            <p class="text-xs">from</p>
+                            <p>$250.00</p>
+                            <Show class="text-blue-900 text-xs border-solid rounded-none border-2 border-blue-400 px-4 py-1 cursor-pointer hover:bg-blue-400 hover:text-white" href="#">Show Rates</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="bg-fixed relative border-solid border-2 border-gray-300 w-auto h-fit flex flex-col items-center md:items-start p-3 bg-slate-200 italic space-y-5 font-serif">
+                    <h1 class="space-y-6 text-xl">Your reservation</h1>
+                    <p class="text-xs space-y-5">Check-in: Fri, Nov 15, 2024<br>Check-out: Sat, Nov 16, 2024</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>1 room, 2 adults, 1 night</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <p>Please add rooms</p>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div>
+                        <p class="text-xs mb-1">Add promo code</p>
+                        <input type="text" placeholder=" Enter code" class="border-solid border-2 border-gray-950 w-52 h-8 italic">
+                        <span><a class="text-white text-sm border-solid rounded-none border-2 border-blue-400 px-4 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950" href="#">Apply</a></span>
+                    </div>
+                    <hr class="w-80 h-1 my-4 bg-gray-100 border-0 rounded md:my-14 dark:bg-gray-700">
+                    <div class="flex gap-52 text-xl">
+                        <p>Total</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="text-white flex relative left-0 md:left-9 text-sm border-solid rounded-none border-2 border-blue-400 px-24 py-2 bg-slate-600  cursor-pointer hover:bg-blue-400 hover:text-red-950"><a href="#">Continue</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+
+
+
+    
+
+
+    
+</body>
+
+</html>

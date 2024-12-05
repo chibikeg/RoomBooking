@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>AboutUs</title>
+  </head>
+  <body>
+    <div
+      class="bg-fixed relative"
+      style="
+        background-image: url(/projecthotel/img/pexels-erik-karits-2093459-16437593.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(202, 202, 202);
+      "
+    >
+      <nav class="top-5 relative w-full">
+        <div class="flex justify-between md:justify-around md:items-center">
+          <a href="#">
+            <div class="flex flex-col items-center">
+              <img
+                src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png"
+                alt=""
+                class="w-fit h-16"
+              />
+              <h1 class="text-2xl font-bold text-white ml-2">Seaside B&B</h1>
+              <p>- San Jose -</p>
+            </div>
+          </a>
+          <div class="hidden md:flex items-center gap-16">
+            <a
+              href="index.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >About us</a
+            >
+            <a
+              href="activities.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Activities</a
+            >
+            <a
+              href="contactus.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Contact us</a
+            >
+          </div>
+
+          <button
+            id="menu-btn"
+            class="block hamburger right-4 mt-10 md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div class="relative flex flex-row justify-center -left-36 md:-left-96">
+      <section class="absolute">
+        <div
+          class="absolute -top-36 bg-white h-20 w-72 border-solid border-blue-950 shadow-lg flex items-end"
+        >
+          <h1 class="text-blue-950 text-2xl font-semibold ml-4 mb-3">
+            About Us
+          </h1>
+        </div>
+      </section>
+    </div>
+
+    <div class="bg-slate-200" style="height: 80vh">
+      <section class="relative flex flex-row justify-center">
+        <div
+          class="absolute -top-5 bg-white h-auto w-auto border-solid border-blue-950 shadow-lg flex flex-col items-center py-12"
+        >
+          <div class="bg-white h-auto px-5">
+            <div>
+              <h1
+                class="text-blue-950 text-3xl font-semibold mb-4 text-center md:text-left"
+              >
+                About Us
+              </h1>
+              <p
+                class="text-blue-950 text-lg font-semibold mb-4 text-center md:text-left"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col md:flex-row justify-center gap-4 italic py-12 w-auto md:max-w-screen-lg"
+            >
+              <div class="md:w-1/2 text-xs text-center md:text-left">
+                <h1 class="mb-6">_________</h1>
+                <p class="mb-5 text-wrap md:text-wrap">
+                  I'm a paragraph. Click here to add your own text and edit me.
+                  It’s easy. Just click “Edit Text” or double click me and you
+                  can start adding your own content and make changes to the
+                  font. Feel free to drag and drop me anywhere you like on your
+                  page. I’m a great place for you to tell a story and let your
+                  users know a little more about you. <br />
+                  This is a great space to write long text about your company
+                  and your services. You can use this space to go into a little
+                  more detail about your company. Talk about your team and what
+                  services you provide. Tell your visitors the story of how you
+                  came up with the idea for your business and what makes you
+                  different from your competitors.
+                </p>
+              </div>
+
+              <div class="md:w-1/2 text-xs text-center md:text-left">
+                <h1 class="mb-6">_________</h1>
+                <p class="mb-5 text-wrap md:text-wrap">
+                  At Wix we’re passionate about making templates that allow you
+                  to build fabulous websites and it’s all thanks to the support
+                  and feedback from users like you! Keep up to date with New
+                  Releases and what’s Coming Soon in Wixellaneous in Support.
+                  Feel free to tell us what you think and give us feedback in
+                  the Wix Forum. <br />
+                  If you’d like to benefit from a professional designer’s touch,
+                  head to the Wix Arena and connect with one of our Wix Pro
+                  designers. Or if you need more help you can simply type your
+                  questions into the Support Forum and get instant answers. To
+                  keep up to date with everything Wix, including tips and things
+                  we think are cool, just head to the Wix Blog!
+                </p>
+              </div>
+
+              <div class="md:w-1/2 text-xs">
+                <img
+                  class="h-80 w-full md:w-96"
+                  src="/projecthotel/img/pexels-goldcircuits-4205798.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="hidden relative" style="top: 70vh">
+        <div class="bg-green-950 h-60 w-full flex flex-col items-center">
+          <div
+            class="flex justify-center items-center text-white text-sm md:text-xl gap-3 md:gap-10 mt-4 mb-10"
+          >
+            <div><a class="hover:text-gray-600" href="#">Home</a></div>
+            <div><a class="hover:text-gray-600" href="#">Book a room</a></div>
+            <div><a class="hover:text-gray-600" href="#">About Us</a></div>
+            <div><a class="hover:text-gray-600" href="#">Activities</a></div>
+            <div><a class="hover:text-gray-600" href="#">Contact Us</a></div>
+          </div>
+          <div
+            class="flex justify-between px-4 md:px-0 items-center gap-6 md:gap-16"
+          >
+            <div class="space-y-1 md:space-y-2">
+              <h1 class="font-extrabold text-white">_____</h1>
+              <p
+                class="font-semibold md:font-bold text-xs md:text-2xl text-white"
+              >
+                Call us now to book
+              </p>
+              <p class="font-extrabold text-xs md:text-xl text-white">
+                <a class="hover:text-gray-600" href="tel:+1-800-000-0000"
+                  >1-800-000-0000</a
+                >
+              </p>
+            </div>
+
+            <div class="space-y-1 md:space-y-2">
+              <h1 class="font-extrabold text-white">_____</h1>
+              <p class="font-bold text-xs md:text-2xl text-white">Follow us</p>
+              <div class="flex items-center gap-3">
+                <a href="#"
+                  ><img
+                    class="bg-white hover:bg-slate-500"
+                    src="/projecthotel/img/facebook-circle-fill.png"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="bg-white hover:bg-slate-500"
+                    src="/projecthotel/img/instagram-fill.png"
+                    alt=""
+                /></a>
+                <a href="#"
+                  ><img
+                    class="bg-white hover:bg-slate-500"
+                    src="/projecthotel/img/twitter-x-line.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+
+            <div class="space-y-1 md:space-y-2">
+              <h1 class="font-extrabold text-white">_____</h1>
+              <p class="font-bold text-xs md:text-sm text-white">
+                © 2035 by Seaside B&B
+              </p>
+              <p class="font-semibold text-xs md:text-xl text-white">
+                Powered and secured by
+                <a
+                  class="font-bold text-yellow-300 hover:text-gray-500"
+                  href="#"
+                  >Wix</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

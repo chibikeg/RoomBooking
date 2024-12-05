@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projecthotel/tailwindcss/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Contact Us</title>
+  </head>
+
+  <body class="overflow-x-hidden">
+    <div
+      class="bg-fixed relative"
+      style="
+        background-image: url(/projecthotel/img/pexels-mahmoud-yahyaoui-27594853.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-blend-mode: multiply;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: rgb(202, 202, 202);
+      "
+    >
+      <nav class="top-5 relative w-full">
+        <div class="flex justify-between md:justify-around md:items-center">
+          <a href="#">
+            <div class="flex flex-col items-center">
+              <img
+                src="/projecthotel/img/05e3dc_861f907ca17745d7879196436cec056f.png.png"
+                alt=""
+                class="w-fit h-16"
+              />
+              <h1 class="text-2xl font-bold text-white ml-2">Seaside B&B</h1>
+              <p>- San Jose -</p>
+            </div>
+          </a>
+          <div class="hidden md:flex items-center gap-16">
+            <a
+              href="index.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Home</a
+            >
+            <a
+              href="AboutUs.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >About us</a
+            >
+            <a
+              href="activities.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Activities</a
+            >
+            <a
+              href="contactus.html"
+              class="text-white text-sm font-semibold mr-4 hover:text-gray-400 hover:underline"
+              >Contact us</a
+            >
+          </div>
+
+          <button
+            id="menu-btn"
+            class="block hamburger right-4 mt-10 md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>.
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <div
+      class="relative flex flex-col -top-48 space-y-5 justify-center text-center md:text-left md:left-3 lg:left-96"
+    >
+      <div
+        class="relative left-10 md:left-0 bg-white h-20 w-72 border-solid border-blue-950 shadow-lg flex items-end"
+      >
+        <h1 class="text-blue-950 text-2xl font-semibold ml-4 mb-3">
+          Contact Us
+        </h1>
+      </div>
+
+      <div class="bg-white h-32 max-w-screen-lg py-10 pl-4 pr-4 md:pr-40">
+        <p class="text-xl md:text-xs text-blue-900">
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me and you can start
+          adding your own content and make changes to the font. I’m a great
+          place for you to tell a story and let your users know a little more
+          about you
+        </p>
+        <p class="font-bold text-blue-950">_________</p>
+      </div>
+    </div>
+
+    <section
+      class="relative flex flex-col justify-center items-center bg-slate-100 py-3 top-0 md:-top-36"
+    >
+      <div
+        class="space-y-4 flex flex-col justify-center items-center md:justify-start md:items-start md:flex-row gap-4"
+      >
+        <div class="text-center md:text-start">
+          <h1 class="text-3xl text-blue-900 font-bold mb-2">Seaside B&B</h1>
+          <p class="italic text-sm text-blue-600">
+            500 Terry Francine Street <br />San Francisco,<br />
+            CA 94158 info@mysite.com <br />
+            Tel: 123-456-7890 Fax: 123-456-7890
+          </p>
+        </div>
+
+        <div class="space-y-4 flex flex-col text-center md:text-left">
+          <div>
+            <p class="italic">First Name *</p>
+            <input
+              class="border border-solid border-blue-900 px-6 py-2 italic hover:bg-blue-200"
+              type="text"
+              placeholder="Your first Name"
+            />
+          </div>
+          <div>
+            <p class="italic">E-mail *</p>
+            <input
+              class="border border-solid border-blue-900 px-6 py-2 italic hover:bg-blue-200"
+              type="email"
+              name="email"
+              id=""
+              placeholder="Your E-mail"
+            />
+          </div>
+
+          <div>
+            <p class="italic">Message</p>
+
+            <input
+              class="border border-solid border-blue-900 w-72 py-2 px-2 italic hover:bg-blue-200"
+              type="text"
+              placeholder="What can we do for you?"
+            />
+          </div>
+        </div>
+
+        <div class="space-y-4 text-center md:text-left">
+          <div>
+            <p class="italic">Last Name *</p>
+            <input
+              class="border border-solid border-blue-900 px-6 py-2 italic hover:bg-blue-200"
+              type="text"
+              placeholder="Your last Name"
+            />
+          </div>
+
+          <div>
+            <p class="italic">Subject</p>
+
+            <input
+              class="border border-solid border-blue-900 px-6 py-2 italic hover:bg-blue-200 mb-12"
+              type="text"
+              placeholder="Title"
+            />
+          </div>
+
+          <a
+            class="relative text-black hover:text-red-600 md:left-40 italic"
+            href="#"
+            >Submit</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
